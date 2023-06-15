@@ -22,10 +22,12 @@ elif size == "M":
     if extra_cheese == "Y":
         bill += 1
     print(f"Your final bill is: ${bill}.")
-else:
+elif size == "L":
     bill += 25
     if add_pepperoni == "Y":
         bill += 3
     if extra_cheese == "Y":
         bill += 1
     print(f"Your final bill is: ${bill}.")
+else:
+    print("Submitted size is invalid")
